@@ -25,7 +25,7 @@
   </script>
 </head>
 
-<body class="min-h-screen overflow-x-hidden px-4 sm:px-6 md:px-16 lg:px-40 items-center justify-center"
+<body class="min-h-screen overflow-x-hidden px-4 sm:px-6 md:px-16 lg:px-40 pt-28 md:pt-32 lg:pt-36"
   style="background:#0b0f14; color:#f8fafc;">
 
 
@@ -160,7 +160,7 @@
 
   <!-- Hero Section (Spacing Matched) -->
   <section id="home"
-    class="flex flex-col md:flex-row items-center justify-between min-h-[500px] sm:min-h-[650px] px-4 sm:px-6 md:px-12 py-16 md:py-0 gap-10 md:gap-0">
+    class="flex flex-col md:flex-row items-center justify-between min-h-[650px] px-6 md:px-12 py-24 md:py-0">
 
     <!-- Profile Image -->
     <div class="relative flex-shrink-0 mb-10 md:mb-0">
@@ -170,8 +170,7 @@
       <div
         class="relative w-[180px] h-[180px] sm:w-[200px] sm:h-[200px] md:w-[340px] md:h-[340px] rounded-full border border-blue-500/40 bg-[#09111f] overflow-hidden flex items-center justify-center shadow-[0_0_40px_rgba(59,130,246,0.25)] sm:shadow-[0_0_60px_rgba(59,130,246,0.25)]">
 
-        my pic
-
+        <img src="./imgs/profile pic" alt="Profile picture" class=" relative top-[55px]">
       </div>
 
     </div>
@@ -261,8 +260,35 @@
 
   <!-- Skills Section -->
   <section class="px-4 sm:px-6 md:px-12 lg:px-20">
-    <div class="text-2xl sm:text-3xl flex w-full justify-center font-medium my-8 sm:my-12">My Skills</div>
+    <div class="flex justify-center my-12">
+      <div class="relative group">
 
+        <!-- glow -->
+        <div
+          class="absolute -inset-5 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-cyan-500/20 blur-2xl opacity-70 group-hover:opacity-100 transition">
+        </div>
+
+        <!-- main pill -->
+        <div
+          class="relative px-8 py-4 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-[0_0_30px_rgba(0,0,0,0.25)]">
+
+          <div class="flex items-center gap-4">
+
+            <!-- pulse dot -->
+            <span class="w-3 h-3 rounded-full bg-[#4f8ef7] animate-pulse"></span>
+
+            <!-- title -->
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-wide text-white">
+              My Skills
+            </h2>
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mt-8 sm:mt-10 max-w-7xl mx-auto">
 
       <!-- HTML Card -->
@@ -345,8 +371,34 @@
   <!-- Projects Section (Pro Version) -->
   <section class="px-4 sm:px-6 lg:px-0 my-16">
 
-    <div class="text-2xl sm:text-3xl font-medium text-center text-white mb-8">
-      Projects
+    <div class="flex justify-center my-12">
+      <div class="relative group">
+
+        <!-- glow -->
+        <div
+          class="absolute -inset-5 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-cyan-500/20 blur-2xl opacity-70 group-hover:opacity-100 transition">
+        </div>
+
+        <!-- main pill -->
+        <div
+          class="relative px-8 py-4 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-[0_0_30px_rgba(0,0,0,0.25)]">
+
+          <div class="flex items-center gap-4">
+
+            <!-- pulse dot -->
+            <span class="w-3 h-3 rounded-full bg-[#4f8ef7] animate-pulse"></span>
+
+            <!-- title -->
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-wide text-white">
+              Description
+            </h2>
+
+
+
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <!-- Container -->
@@ -354,9 +406,9 @@
 
       <!-- Card 1 -->
       <div
-        class="group relative overflow-hidden rounded-2xl border border-slate-500/20 bg-slate-900/60 backdrop-blur-xl p-6 sm:p-8 shadow-[0_18px_50px_rgba(0,0,0,0.25)] transition-all duration-300 hover:shadow-[0_25px_80px_rgba(59,130,246,0.25)] hover:-translate-y-1">
+        class="flex items-center justify-center group relative overflow-hidden rounded-2xl border border-slate-500/20 bg-slate-900/60 backdrop-blur-xl p-6 sm:p-8 shadow-[0_18px_50px_rgba(0,0,0,0.25)] transition-all duration-300 hover:shadow-[0_25px_80px_rgba(59,130,246,0.25)] hover:-translate-y-1">
 
-        <div class="flex items-start gap-5">
+        <div class="flex items-center gap-5 ">
 
           <!-- Icon -->
           <div class="relative flex-shrink-0">
@@ -397,7 +449,7 @@
 
       <!-- Card 2 -->
       <div
-        class="group relative overflow-hidden rounded-2xl border border-slate-500/20 bg-slate-900/60 backdrop-blur-xl p-6 sm:p-8 shadow-[0_18px_50px_rgba(0,0,0,0.25)] transition-all duration-300 hover:shadow-[0_25px_80px_rgba(168,85,247,0.25)] hover:-translate-y-1">
+        class="flex group relative overflow-hidden rounded-2xl border border-slate-500/20 bg-slate-900/60 backdrop-blur-xl p-6 sm:p-8 shadow-[0_18px_50px_rgba(0,0,0,0.25)] transition-all duration-300 hover:shadow-[0_25px_80px_rgba(168,85,247,0.25)] hover:-translate-y-1">
 
         <div class="flex items-center gap-5">
 
@@ -441,9 +493,35 @@
   </section>
 
   <section id="contact">
-    <h2 class="text-3xl flex w-full justify-center font-medium my-5">
-      Contact Me
-    </h2>
+    <div class="flex justify-center my-12">
+      <div class="relative group">
+
+        <!-- glow -->
+        <div
+          class="absolute -inset-5 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-cyan-500/20 blur-2xl opacity-70 group-hover:opacity-100 transition">
+        </div>
+
+        <!-- main pill -->
+        <div
+          class="relative px-8 py-4 rounded-full border border-white/10 bg-white/[0.03] backdrop-blur-xl shadow-[0_0_30px_rgba(0,0,0,0.25)]">
+
+          <div class="flex items-center gap-4">
+
+            <!-- pulse dot -->
+            <span class="w-3 h-3 rounded-full bg-[#4f8ef7] animate-pulse"></span>
+
+            <!-- title -->
+            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-wide text-white">
+              Contact Me
+            </h2>
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 p-6 md:p-8 rounded-3xl
     border border-white/10
@@ -501,7 +579,7 @@
           </div>
         </div>
 
-        <div class="text-center sm:text-left">
+        <div class="text-center sm:text-left break-all">
           <div class="text-slate-400 text-sm">GitHub</div>
           <div class="text-white font-medium text-[15px]">
             farzadfarahmand8-dot
@@ -540,7 +618,7 @@
 
         <div class="text-center sm:text-left">
           <div class="text-slate-400 text-sm">Instagram</div>
-          <div class="text-white font-medium text-[15px]">
+          <div class="text-white font-medium text-[15px] break-all">
             farzad10293847
           </div>
         </div>
@@ -606,6 +684,14 @@
       <div class="absolute inset-0 bg-[radial-gradient(circle,transparent_35%,rgba(0,0,0,0.85))]"></div>
 
     </div>
+    <script>
+      const btn = document.getElementById("mobile-menu-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
 </body>
 
 </html>
